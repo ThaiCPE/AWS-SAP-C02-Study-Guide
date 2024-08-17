@@ -41,7 +41,7 @@ Note: The author makes no promises or guarantees on this guide as this is as sta
 
 ### AWS Account Organizational Unit Migration:
   * ลบบัญชีสมาชิกออกจากองค์กรเดิม [ต้องการการเข้าถึง Root หรือ IAM ไปยังบัญชีสมาชิกและบัญชีหลักดังกล่าว]
-  * Send an invite to the member account from the prospective organization
+  * ส่งคำเชิญไปยังบัญชีสมาชิกจากองค์กรที่คาดหวัง
   * Accept the invite from the prospective organization upon the member account
   * Ensure the OrganizationAccountAccessRole is added to the member account
 
