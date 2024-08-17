@@ -40,7 +40,7 @@ Note: The author makes no promises or guarantees on this guide as this is as sta
 ## Organizational Unit (OU)
 
 ### AWS Account Organizational Unit Migration:
-  * Remove the member account from the former organization [need root or IAM access to said member account and master account(s)]
+  * ลบบัญชีสมาชิกออกจากองค์กรเดิม [ต้องการการเข้าถึง Root หรือ IAM ไปยังบัญชีสมาชิกและบัญชีหลักดังกล่าว]
   * Send an invite to the member account from the prospective organization
   * Accept the invite from the prospective organization upon the member account
   * Ensure the OrganizationAccountAccessRole is added to the member account
