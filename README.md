@@ -42,21 +42,21 @@ Note: The author makes no promises or guarantees on this guide as this is as sta
 ### AWS Account Organizational Unit Migration:
   * ลบบัญชีสมาชิกออกจากองค์กรเดิม [ต้องการการเข้าถึง Root หรือ IAM ไปยังบัญชีสมาชิกและบัญชีหลักดังกล่าว]
   * ส่งคำเชิญไปยังบัญชีสมาชิกจากองค์กรที่คาดหวัง
-  * Accept the invite from the prospective organization upon the member account
-  * Ensure the OrganizationAccountAccessRole is added to the member account
+  * ยอมรับคำเชิญจากองค์กรที่คาดหวังโดยใช้บัญชีสมาชิก
+  * ตรวจสอบให้แน่ใจว่า OrganizationAccountAccessRole ถูกเพิ่มไปยังบัญชีสมาชิกแล้ว
 
 ### AWS Control Tower:
-  * Easy way to setup and govern a secure and compliant multi-account AWS environment based on best practices and using AWS OU to create accounts
-  * automates setup of environments in a few clicks
-  * automates ongoing policy management using guard rails:
-    * SCP: preventative
-    * AWS Config: detective
-  * detects policy violations and remediates them
-  * monitor compliance through dashboards
+  * วิธีง่ายๆ ในการตั้งค่าและควบคุม Environment AWS หลายบัญชีที่ปลอดภัยและปฏิบัติตามแนวทางปฏิบัติที่ดีที่สุด (Best Practices) และการใช้ AWS OU เพื่อสร้างบัญชี
+  * ทำให้การตั้งค่า Environment เป็นแบบอัตโนมัติด้วยการ Click เพียงไม่กี่ครั้ง
+  * ทำให้การจัดการ Policy อย่างต่อเนื่องเป็นแบบอัตโนมัติโดยใช้ Guard Rails:
+    * SCP: ป้องกัน
+    * AWS Config: Detect
+  * Detect การละเมิด Policy และแก้ไข
+  * ตรวจสอบการปฏิบัติตามข้อกำหนดผ่าน Dashboard
 
 ### Service Control Policies (SCP):
-  * Policies for OUs to manage permissions within, helping accounts stay within control by setting limits/guard rails
-  * No permissions are granted by SCP, still IAM, but the effective permissions are the intersection of IAM, SCP, and IAM permissions boundaries allowing access
+  * Policy สำหรับ OU ในการจัดการสิทธิ์ภายใน ช่วยให้บัญชีอยู่ภายใต้การควบคุมโดยการตั้งค่า Limit/Guard Rails
+  * ไม่มีสิทธิ์ที่ได้รับอนุญาตจาก SCP ยังคงเป็น IAM แต่สิทธิ์ที่มีผลจริงคือส่วนที่ซ้อนทับกันระหว่าง IAM, SCP และขอบเขตสิทธิ์ของ IAM ที่อนุญาตการเข้าถึง
   * OU must have all features enabled to utilize.
   * Affects member accounts and attached users and roles within including the root user(s), not management accounts.
   * Doesn't affect resource-based policies directly.
