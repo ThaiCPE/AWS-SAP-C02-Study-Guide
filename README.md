@@ -788,7 +788,7 @@ Note: The author makes no promises or guarantees on this guide as this is as sta
   * SSM parameter store can be utilized if wanting to track versions/values of secrets
   
 ### Amazon GuardDuty:
-  * Threat detection service that continuously monitors AWS accounts and workloads for malicious activity to deliver detailed security findings for visibility and remediation
+  * บริการตรวจจับภัยคุกคามที่ตรวจสอบ Account AWS และ Workload อย่างต่อเนื่องเพื่อหากิจกรรมที่เป็นอันตราย เพื่อ Deliver การค้นพบด้านความปลอดภัยโดยละเอียด สำหรับการมองเห็นและการแก้ไข
   * Helps against the following:
     * Can protect against CryptoCurrency attacks (has a dedicated "finding" for it)
     * Anomaly detection via ML
@@ -873,7 +873,7 @@ Note: The author makes no promises or guarantees on this guide as this is as sta
   * If prone to frequent DDOS=>Shield Advanced
   
 ### Amazon Inspector:
-  * Automated security assessments (Only λ, EC2 instances, and container infrastructure)
+  * การประเมินความปลอดภัยอัตโนมัติ (เฉพาะ λ, EC2 instances และ Container Infrastructure)
   * For EC2 instances: 
     * Leveraging AWS Sys Mgr (SSM) Agent
     * Analyze against unintended network accessibility
@@ -1904,7 +1904,7 @@ graph LR
   * IAM auth not supported
   * Redis versus Mem Cached:
     * Redis:
-      * backup and restore features
+      * Feature การสำรอง และกู้คืน
       * read replicas to scale reads/HA
       * data durability using AOF persistence
       * multi-AZ with failover 
